@@ -1,0 +1,146 @@
+{
+	"info": {
+		"_postman_id": "792e1811-4daf-4746-a754-129abd947613",
+		"name": "localhost:8081/cliente",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28810858"
+	},
+	"item": [
+		{
+			"name": "Actualizamos Cliente",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/cliente",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"cliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eliminar",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/cliente",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"cliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Cliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":1,\r\n    \"description\": \"Persona\",\r\n    \"nombre\":  \"javier\",\r\n    \"fecha\": \"2023-10-18T01:58:07.549+00:00\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/cliente",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"cliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar Cliente",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 2,\r\n        \"description\": \"Persona contenta\",\r\n        \"nombre\": \"Pepe\",\r\n        \"fecha\": \"2023-10-17T05:00:00.000+00:00\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/cliente",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"cliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizacion Parcial Cliente",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 2,\r\n        \"description\": \"Persona contenta y triste\",\r\n        \"nombre\": \"Pepe\",\r\n        \"fecha\": \"2023-10-17T05:00:00.000+00:00\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/cliente",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"cliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cliente Get 1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/cliente/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"cliente",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
